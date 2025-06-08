@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- CLOAKING : Redirection vers Google si ce n’est pas un appareil mobile -->
+  <script>
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      window.location.href = "https://www.google.com";
+    }
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Phot0s et Renc0nt-res</title>
+  <title>Photos et Rencontres</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -122,17 +129,17 @@
     <div class="step-block">
       <div class="step-item" id="step1">
         <div class="question-title">
-          Nous venons chez vous la nuit, service disponible dans toute la ville. Souhaitez-vous voir mon catalogue ?
+          Nous venons chez toi la nuit, service disponible dans toute la ville. Veux-tu voir mon catalogue ?
         </div>
         <div class="buttons-block">
           <button class="step-btn" onclick="afficherEtape2()">Oui, je veux voir</button>
-          <button class="step-btn" onclick="alert('Peut-être la prochaine fois !')">Pas pour le moment</button>
+          <button class="step-btn" onclick="alert('Peut-être une autre fois !')">Pas maintenant</button>
         </div>
       </div>
 
       <div class="step-item" id="step2" style="display: none;">
         <div class="question-title">
-          ATTENTION ! Acceptez-vous de respecter les femmes que vous allez voir ? Si vous en connaissez une, ne dites rien et ne répandez pas de rumeurs.
+          ATTENTION ! Acceptes-tu de respecter les femmes que tu verras ? Si tu en reconnais une, ne dis rien et ne propage pas de rumeurs.
         </div>
         <div class="buttons-block">
           <a href="https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={Zeus}&subid2={subid2}&clickid={clickid}" class="step-btn">
